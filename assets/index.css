@@ -1,0 +1,144 @@
+:root{
+    --primary-color: #933014;
+    --secondary-color: #A49693;
+    --tertiary-color: #FCF8F5;
+}
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* to remove default chrome settings */
+
+body{
+    color: var(--primary-color);
+}
+
+.main {
+    display: flex;
+    direction: row;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header{
+    padding-top: 50px;
+    margin-bottom: 20px;
+}
+
+.products {
+    width: 70%;
+}
+
+.products_list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 3.33%;
+    row-gap: 30px;
+}
+
+.products_list-item {
+    width: 30%;
+    list-style: none;
+}
+
+.products_list-item-tag {
+   color: var(--secondary-color);
+   margin-top: 40px;
+   display: block;
+}
+
+.products_list-item-description{
+    font-weight: 600;
+}
+
+.products_list-item-amount {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+ 
+
+.products_image-container {
+    height: 250px;
+    background-color: #eee;
+    border-radius: 8px;
+    position: relative;
+}
+
+.products_list-item-flt-btn {
+    background-color: white;
+    width: 70;
+    margin: 0 auto;
+    height: 40px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    border: 1px solid var(--secondary-color);
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.cart {
+    background-color: #eee;
+    border-radius: 8px;
+    width: 30%;
+    padding: 20px;
+  }
+
+  .cart__heading {
+    margin-bottom: 16px;
+    color: var(--primary-color);
+  }
+
+  .cart__list {
+    
+  }
+
+  .cart_list-item {
+    list-style-type: none;
+    justify-content: space-between;
+    display: flex;
+
+  }
+
+  .cart_list-item-details {
+        display: flex;
+  }
+
+  .cart__list-item-heading{
+
+  }
+
+  .cart_total {
+    margin: 20px 0;
+  }
+
+  @font-face {
+    font-family: RedHatTextBold;
+    font-weight: 700;
+    src: url("./fonts/static/RedHatText-Bold.ttf");
+  }
+
+
+  @font-face {
+    font-family: RedHatTextBold;
+    font-weight: 400;
+    src: url("./fonts/static/RedHatText-Regular.ttf");
+  }
+
+  @font-face {
+    font-family: RedHatTextBold;
+    font-weight: 600;
+    src: url("../fonts/RedHatText-SemiBold.ttf");
+  }
+
